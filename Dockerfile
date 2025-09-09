@@ -26,4 +26,4 @@ COPY . /app
 EXPOSE 80
 
 # Uvicorn for async FastAPI
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "80", "--proxy-headers", "--ws", "websockets"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--proxy-headers", "--ws", "websockets"]
